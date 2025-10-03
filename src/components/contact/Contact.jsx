@@ -18,7 +18,8 @@ export default function Contact() {
       const data = await response.json();
   
       if (data.success) {
-        setResult("Form Submitted Successfully");
+        const successMessage = "Form Submitted Successfully";
+        alert(successMessage);
         event.target.reset();
       } else {
         console.log("Error", data);
@@ -46,7 +47,7 @@ export default function Contact() {
           <button type="submit">Send Message</button>
   
         </form>
-        <span>{result}</span>
+        
   
       </section>
     );
