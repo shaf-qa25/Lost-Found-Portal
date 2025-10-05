@@ -11,11 +11,11 @@ const HomePage = ({
   foundItems,
   handleAddLostItem,
   handleAddFoundItem,
-  handleItemFound,
-  Contact
+  handleItemFound
 }) => {
   const [activeSection, setActiveSection] = useState("home");
 
+  
 
   const combinedList = lostItems?.map((item) => ({
     ...item,
@@ -39,7 +39,10 @@ const HomePage = ({
             <FoundItemForm onFormSubmit={handleAddFoundItem} />
           </div>
         );
-    
+        case "contact":
+          return (
+            <Contact/>
+          )
 
 
       case "view_all":
