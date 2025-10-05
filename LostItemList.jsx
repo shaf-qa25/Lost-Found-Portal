@@ -2,10 +2,9 @@ import { useState } from "react";
 import FoundItemForm from "./src/components/Founditemform";
 
 const LostItemsList = ({ items = [], onClaim }) => {
-  // Filter only lost items
   const lostItems = items.filter((item) => item.isLost);
 
-  // Track which item's found form is open
+  
   const [openFormId, setOpenFormId] = useState(null);
 
   const handleToggleForm = (itemId) => {
