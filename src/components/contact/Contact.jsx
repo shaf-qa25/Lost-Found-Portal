@@ -30,7 +30,7 @@ export default function Contact() {
     return (
       <section className="contact">
         <form onSubmit={onSubmit}>
-            <h2>Contact Form</h2>
+            <h2>Complaint Form</h2>
           <div className="input-box">
             <label>Full Name</label>
             <input type="text" name="name" className="field" placeholder="Enter Your Name" required/>
